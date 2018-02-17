@@ -6,23 +6,29 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>doctor lookup</title>
+    <title>doctor search</title>
   </head>
   <body>
     <div class="container">
-      <form id="issue-search-form">
-        <label for="issue">Medical issue: </label>
-        <input id="issue" type="text" value="">
-        <button type="submit">submit</button>
-      </form>
+      <div class="forms">
+        <h1>Doctor search</h1>
 
-      <form id="name-search-form">
-        <label for="doc-name">Doctor's name</label>
-        <input id="doc-name" type="text" value="">
-        <button type="submit">submit</button>
-      </form>
+        <button id="get-all" type="button">get all</button>
 
-      <button id="get-all" type="button">get all</button>
+        <form id="issue-search-form">
+          <label for="issue">Medical issue: </label>
+          <input id="issue" type="text" value="">
+          <button type="submit">search</button>
+        </form>
+
+        <form id="name-search-form">
+          <label for="doc-name">Doctor's name: </label>
+          <input id="doc-name" type="text" value="">
+          <button type="submit">search</button>
+        </form>
+      </div>
+
+      <hr>
 
       <div class="result">
 

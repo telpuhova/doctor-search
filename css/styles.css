@@ -1,0 +1,11 @@
+.forms {
+  border: solid grey 1px;
+  padding: 15px;
+  width: 500px;
+  margin-top: 30px;
+  background-color: #dee8f2;
+}
+
+#get-all {
+  float: right;
+}
