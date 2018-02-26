@@ -18,6 +18,11 @@ $ git clone https://github.com/telpuhova/doctor-search.git
 ```
 $ npm install
 $ bower install
+```
+* create a file in the root directory titled .env
+* acquire an api Key for the Better Doctor API and save it in the .env file as exports.apiKey1 = "{YOUR API KEY HERE}"
+* run the following from the terminal:
+```
 $ gulp build --production
 $ gulp serve
 ```
