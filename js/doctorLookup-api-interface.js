@@ -26,22 +26,22 @@ function getAll() {
               $(".result").append(`&emsp;${doctor.practices[j].name}<br>
                 &emsp;&emsp;accepts new patients: ${doctor.practices[j].accepts_new_patients}<br>
                 &emsp;&emsp;${doctor.practices[j].visit_address.street} ${doctor.practices[j].visit_address.street2}, ${doctor.practices[j].visit_address.city}, ${doctor.practices[j].visit_address.state}, ${doctor.practices[j].visit_address.zip}<br>`);
+              for (let k=0; k<doctor.practices[j].phones.length; k++) {
+                $(".result").append(`&emsp;&emsp;${doctor.practices[j].phones[k].type}:
+                  ${doctor.practices[j].phones[k].number}<br>`);
+              }
+            } else {
+                $(".result").append(`&emsp;${doctor.practices[j].name}<br>
+                  &emsp;&emsp;accepts new patients: ${doctor.practices[j].accepts_new_patients}<br>
+                  &emsp;&emsp;${doctor.practices[j].visit_address.street}, ${doctor.practices[j].visit_address.city}, ${doctor.practices[j].visit_address.state}, ${doctor.practices[j].visit_address.zip}<br>`);
                 for (let k=0; k<doctor.practices[j].phones.length; k++) {
                   $(".result").append(`&emsp;&emsp;${doctor.practices[j].phones[k].type}:
                     ${doctor.practices[j].phones[k].number}<br>`);
-                  }
-                } else {
-                  $(".result").append(`&emsp;${doctor.practices[j].name}<br>
-                    &emsp;&emsp;accepts new patients: ${doctor.practices[j].accepts_new_patients}<br>
-                    &emsp;&emsp;${doctor.practices[j].visit_address.street}, ${doctor.practices[j].visit_address.city}, ${doctor.practices[j].visit_address.state}, ${doctor.practices[j].visit_address.zip}<br>`);
-                    for (let k=0; k<doctor.practices[j].phones.length; k++) {
-                      $(".result").append(`&emsp;&emsp;${doctor.practices[j].phones[k].type}:
-                        ${doctor.practices[j].phones[k].number}<br>`);
-                    }
                 }
             }
-            $(".result").append(`<hr>`);
-        }
+          }
+          $(".result").append(`<hr>`);
+          }
       }
     },
     error: function() {
