@@ -1,3 +1,8 @@
+import { getAll } from './../js/doctorLookup';
+import { issueApiRequest } from './../js/doctorLookup';
+import { nameApiRequest } from './../js/doctorLookup';
+var apiKey = require('./../.env').apiKey;
+
 $(document).ready(function() {
   $("#issue-search-form").submit(function(event) {
     event.preventDefault();
