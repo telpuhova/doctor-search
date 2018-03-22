@@ -6,7 +6,7 @@ Doctor search app, 2/16/2018
 
 ## Description
 
-An application that uses BetterDoctor API to retrieve information about doctors and lets a user find a match by typing an issue that they're having, or the name of a doctor.
+An application that uses Better Doctor API to retrieve information about doctors and lets a user find a match by typing an issue that they're having, or the name of a doctor.
 
 ## Setup
 
